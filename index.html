@@ -1,72 +1,214 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Laddu Gopal Vaghā • Divine Wear & Accessories</title>
-  <meta name="description" content="Beautiful Laddu Gopal vagha, pagdi, and accessories handmade in India."/>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23f5b400'/%3E%3Cpath d='M50 18c10 9 22 13 22 26 0 10-9 18-22 18S28 54 28 44c0-13 12-17 22-26z' fill='%239b4dca'/%3E%3C/svg%3E"/>
-  <link rel="preload" href="assets/styles.css" as="style"/>
-  <link rel="preload" href="assets/app.js" as="script"/>
-  <link rel="stylesheet" href="assets/styles.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanha Vastra — Laddu Gopal Vastra, Mukut & Accessories</title>
+  <meta name="description" content="Kanha Vastra: Devotional clothing and accessories for Laddu Gopal — vastra, mukut, haar, bansuri & more. Order easily on WhatsApp.">
+  <meta name="theme-color" content="#b88a2a">
+  <meta property="og:title" content="Kanha Vastra — Laddu Gopal Vastra, Mukut & Accessories">
+  <meta property="og:description" content="Devotional outfits for Thakurji with love. Order on WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="header" role="banner">
-    <div class="container bar">
-      <a class="brand" href="index.html" aria-label="Laddu Gopal Vaghā home">
-        <span class="logo" aria-hidden="true"></span>
-        <span class="name">Laddu Gopal Vaghā</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="shop.html" >Shop</a>
-        <a href="cart.html" >Cart <span class="cart-badge" aria-label="items in cart">0</span></a>
-      </nav>
-      <a class="cta" href="tel:+919265550647" aria-label="Call us">Call</a>
-    </div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <img src="assets/logo.svg" alt="Kanha Vastra logo" class="logo">
+      <span>Kanha Vastra</span>
+    </a>
+    <nav class="nav">
+      <a href="#products">Products</a>
+      <a href="#sizes">Size Guide</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-outline">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
   </div>
-  <div class="container" role="main" tabindex="-1">
-  <div id="live" class="visually-hidden" aria-live="polite"></div>
+</header>
 
-<section class="hero">
-  <div class="panel">
-    <div class="card">
-      <span class="badge">New • Festive Collection</span>
-      <h1>Divine Vaghā for Laddu Gopal</h1>
-      <p class="lead">Premium vagha sets, pagdi, and puja accessories. Handcrafted with love, shipped across India.</p>
-      <div class="searchbar" role="search">
-        <input id="search" class="input" placeholder="Search 'brocade', 'daily cotton', 'mukut'…" aria-label="Search products"/>
-        <a href="shop.html" class="cta" aria-label="Open shop">Browse All</a>
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>कान्हा वस्त्र — Dress your beloved Thakurji</h1>
+        <p class="sub">Handcrafted Laddu Gopal <strong>Vastra · Mukut · Accessories</strong> made with devotion.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/919265550647?text=Jai%20Shri%20Krishna!%20I%20want%20to%20order%20from%20Kanha%20Vastra.">Order on WhatsApp</a>
+          <a class="btn btn-ghost" href="#products">Browse Products</a>
+        </div>
+        <p class="meta">WhatsApp: <a href="https://wa.me/919265550647" rel="noopener">+91 9265550647</a></p>
       </div>
-      <div class="pill-row">
-        <span class="pill">0–4 No sizes</span>
-        <span class="pill">Cash on Delivery*</span>
-        <span class="pill">Free size exchange</span>
-      </div>
+      <figure class="hero-art">
+        <img src="assets/hero.jpg" alt="Laddu Gopal vastra & mukut display">
+      </figure>
     </div>
-    <div class="card" aria-label="Shipping notice">
-      <div class="alert">Orders above ₹999 ship free • Pan-India delivery</div>
-      <div style="margin-top:10px" class="notice">Tip: Use the size guide on product pages to match your murti height.</div>
-      <ul>
-        <li>Secure checkout via WhatsApp order</li>
-        <li>Support: +91 99999 99999</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section aria-labelledby="featured">
-  <h2 id="featured">Featured</h2>
-  <div id="product-grid" class="grid" style="grid-template-columns:repeat(3,1fr)"></div>
-</section>
-
-  </div>
-  <footer class="footer" role="contentinfo">
+  <section id="products" class="section">
     <div class="container">
-      <div>© 2025 Laddu Gopal Vaghā • Handmade in India • <a href="mailto:orders@example.com">orders@example.com</a></div>
-      <div class="small">This is a demo storefront. Replace contact and WhatsApp number in assets/app.js and checkout.html.</div>
+      <div class="section-head">
+        <h2>Products</h2>
+        <p>Popular picks — more on request.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <img src="assets/prod-vastra.jpg" alt="Laddu Gopal Vastra">
+          <div class="card-body">
+            <h3>Vastra Set</h3>
+            <p>Premium fabric, neat finishing. Available in sizes 0–7.</p>
+            <div class="price">₹349–₹1,499</div>
+            <a class="btn btn-primary btn-block" href="#" data-wa="Vastra Set">Order on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/prod-mukut.jpg" alt="Mukut with peacock feather">
+          <div class="card-body">
+            <h3>Mukut + Mor Pankh</h3>
+            <p>Lightweight, comfortable, secure fit for daily darshan.</p>
+            <div class="price">₹99–₹499</div>
+            <a class="btn btn-primary btn-block" href="#" data-wa="Mukut + Mor Pankh">Order on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/prod-accessories.jpg" alt="Accessories set">
+          <div class="card-body">
+            <h3>Accessories Set</h3>
+            <p>Bansuri, haar, kundal, pajeb — customizable combos.</p>
+            <div class="price">₹149–₹799</div>
+            <a class="btn btn-primary btn-block" href="#" data-wa="Accessories Set">Order on WhatsApp</a>
+          </div>
+        </article>
+      </div>
     </div>
-  </footer>
-  <script src="assets/app.js" defer></script>
+  </section>
+
+  <section id="sizes" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Size Guide (Laddu Gopal)</h2>
+        <p>Measure deity idol height; pick the closest size.</p>
+      </div>
+      <div class="size-grid">
+        <div class="size">
+          <div class="size-no">0–1</div>
+          <div class="size-desc">2–4 inches</div>
+        </div>
+        <div class="size">
+          <div class="size-no">2–3</div>
+          <div class="size-desc">5–7 inches</div>
+        </div>
+        <div class="size">
+          <div class="size-no">4–5</div>
+          <div class="size-desc">8–10 inches</div>
+        </div>
+        <div class="size">
+          <div class="size-no">6–7</div>
+          <div class="size-desc">11–13 inches</div>
+        </div>
+      </div>
+      <p class="note">Unsure? Send a photo & measurement on WhatsApp; we'll suggest the best fit.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p>Recent custom pieces.</p>
+      </div>
+      <div class="mosaic">
+        <img src="assets/g1.jpg" alt="Gallery 1">
+        <img src="assets/g2.jpg" alt="Gallery 2">
+        <img src="assets/g3.jpg" alt="Gallery 3">
+        <img src="assets/g4.jpg" alt="Gallery 4">
+        <img src="assets/g5.jpg" alt="Gallery 5">
+        <img src="assets/g6.jpg" alt="Gallery 6">
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>FAQ</h2>
+      </div>
+      <details>
+        <summary>How do I place an order?</summary>
+        <p>Tap any “Order on WhatsApp” button, send your size & product name. We'll confirm price & dispatch time.</p>
+      </details>
+      <details>
+        <summary>Do you ship PAN-India?</summary>
+        <p>Yes. Courier charges as per location & weight.</p>
+      </details>
+      <details>
+        <summary>Custom color/design?</summary>
+        <p>Absolutely! Share references on WhatsApp.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>WhatsApp only: <a href="https://wa.me/919265550647" class="link-strong">+91 9265550647</a></p>
+        <p>Email: <a href="mailto:hello@kanhavastra.in">hello@kanhavastra.in</a></p>
+        <p>Hours: 10:00–19:00 IST • Mon–Sat</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/919265550647?text=Jai%20Shri%20Krishna!%20I%27d%20like%20to%20order.">Message on WhatsApp</a>
+          <a class="btn btn-outline" href="#products">See Products</a>
+        </div>
+      </div>
+      <form class="quick-form" id="quickForm">
+        <h3>Quick Enquiry</h3>
+        <label> Name
+          <input type="text" name="name" required>
+        </label>
+        <label> What do you need?
+          <input type="text" name="need" placeholder="e.g., Size 3 vastra in red" required>
+        </label>
+        <label> Size
+          <input type="text" name="size" placeholder="0–7" required>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Send on WhatsApp</button>
+        <p class="tiny">This sends your enquiry to WhatsApp; no data stored here.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="brand small">
+      <img src="assets/logo.svg" alt="Kanha Vastra logo">
+      <span>Kanha Vastra</span>
+    </div>
+    <div class="foot-links">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="copy">© 2025 Kanha Vastra. All rights reserved.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919265550647?text=Hi%20Kanha%20Vastra!" class="wa-float" aria-label="Chat on WhatsApp">
+  <img src="assets/whatsapp.svg" alt="WhatsApp">
+</a>
+
 </body>
 </html>
